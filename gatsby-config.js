@@ -1,13 +1,17 @@
-/**
- * @type {import('gatsby').GatsbyConfig}
- */
 module.exports = {
   siteMetadata: {
     title: "Vlad Breus Blog",
-    siteUrl: `https://www.vbr.eus`,
+    publicUrl: "https://vbr.eus"
   },
   plugins: [
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `blog`,
+        path: `${__dirname}/blog`,
+      }
+    },
   ],
-}
+};
