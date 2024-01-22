@@ -1,0 +1,33 @@
+.postCardLink {
+    text-decoration: none;
+    color: inherit; /* Ensures text inherits the default color and does not look like a typical link */
+  }
+  
+  .postCard {
+    border: 1px solid #ddd;
+    padding: 16px;
+    border-radius: 8px;
+    transition: box-shadow 0.3s;
+    display: block; /* Makes the entire card clickable */
+  }
+
+  .postCard:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .postDate, .excerpt {
+    color: #666;
+  }
+  
+  h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  h2 a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  /* Add more styles as needed */
+  

@@ -6,7 +6,6 @@ module.exports = {
   plugins: [
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
-    "gatsby-plugin-mdx",
     "gatsby-transformer-sharp",
     {
       resolve: "gatsby-source-filesystem",
@@ -14,6 +13,19 @@ module.exports = {
         name: `blog`,
         path: `${__dirname}/blog`,
       }
+    },
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 1200,
+            },
+          },
+        ],
+      },
     },
   ],
 };
