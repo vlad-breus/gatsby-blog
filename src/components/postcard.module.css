@@ -1,22 +1,29 @@
-.postCardLink {
+.post-card-link {
     text-decoration: none;
-    color: inherit; /* Ensures text inherits the default color and does not look like a typical link */
+    color: inherit;
   }
   
-  .postCard {
+  .post-card {
     border: 1px solid #ddd;
-    padding: 16px;
-    border-radius: 8px;
+    border-radius: 12px;
+    overflow: hidden;
     transition: box-shadow 0.3s;
-    display: block; /* Makes the entire card clickable */
+    display: block;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
   }
-
-  .postCard:hover {
+  
+  .post-card:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
-
-  .postDate, .excerpt {
-    color: #666;
+  
+  .gatsby-image-wrapper {
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 8px;
+    display: block;
+    max-width: 100%;
   }
   
   h2 {
@@ -29,24 +36,28 @@
     text-decoration: none;
   }
   
-  .postCardContent {
+  .post-card-content {
     padding: 12px;
     transition: background-color 0.3s, color 0.3s;
     margin-top: 10px;
   }
   
-  .postCardContent h2 {
+  .post-card-content h2 {
     margin: 0.5em 0;
-    font-size: 1.2em; /* Adjust the font size as needed */
+    font-size: 1.2em;
   }
   
-  .postCardContent .postDate {
-    font-size: 0.9em;
-    color: #666;
-    margin-bottom: 0.5em;
+  .post-card-content {
+    padding: 12px;
+    margin: 8px; 
+    transition: background-color 0.3s, color 0.3s;
   }
   
-  .postCardContent .excerpt {
+  .post-card-content .excerpt {
     font-size: 1em;
     color: #333;
   }  
+
+  .post-date, .excerpt {
+    color: #666;
+  }
