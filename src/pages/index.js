@@ -2,8 +2,8 @@ import * as React from 'react';
 import { Link, useStaticQuery, graphql } from 'gatsby';
 import Layout from '../components/layout';
 import Seo from '../components/seo';
-import PostGrid from '../components/postGrid'; // Make sure to import PostGrid
-import Button from '../components/Button';
+import PostGrid from '../components/postgrid'; // Make sure to import PostGrid
+import Button from '../components/button';
 import { StaticImage } from 'gatsby-plugin-image';
 import * as styles from '../components/header.module.css';
 
