@@ -1,12 +1,15 @@
 module.exports = {
   siteMetadata: {
     title: "Vlad Breus Blog",
-    publicUrl: "https://vbr.eus"
+    publicUrl: "https://www.vbr.eus",
+    siteUrl: "https://www.vbr.eus"
   },
   plugins: [
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
+    "gatsby-plugin-sitemap",
+    "gatsby-plugin-csp",
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -51,5 +54,13 @@ module.exports = {
         display: 'swap',
       },
     },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://www.vbr.eus',
+        sitemap: 'https://www.vbr.eus/sitemap.xml',
+        policy: [{userAgent: '*', allow: '/'}]
+      }
+    }
   ],
 };
