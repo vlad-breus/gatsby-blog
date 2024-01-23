@@ -45,10 +45,11 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `Merriweather\:400,400i,700,700i`,
+          `Montserrat\:400,400i,700,700i`,
           `Roboto\:400,400i,700,700i`,
           `Lato\:400,400i,700,700i`,
           `Playfair Display\:400,400i,700,700i`,
+          `Open Sans\:400,400i,700,700i`,
         ],
         display: 'swap',
       },

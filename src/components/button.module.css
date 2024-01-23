@@ -11,11 +11,12 @@
 }
 
 .button:hover, .button:focus {
-  background-color: #e8e8e8; /* Change background on hover/focus */
+  background-color: #003366; /* Change background on hover/focus */
   border-color: #ddd; /* Change border color */
+  color: white
 }
 
 .button.active { /* Use the 'active' class for active state */
-  color: #007bff; /* Example active button color */
-  border-color: #007bff; /* Example active button border color */
+  color: #003366; /* Example active button color */
+  border-color: #003366; /* Example active button border color */
 }
