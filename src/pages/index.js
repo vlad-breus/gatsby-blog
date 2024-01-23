@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Link, useStaticQuery, graphql } from 'gatsby';
 import Layout from '../components/layout';
 import Seo from '../components/seo';
-import PostGrid from '../components/postGrid';
+import PostGrid from '../components/PostGrid';
 import Button from '../components/button';
 import { StaticImage } from 'gatsby-plugin-image';
 
