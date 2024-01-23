@@ -1,6 +1,6 @@
 import React from 'react';
-import PostCard from './postcard';
-import * as styles from './PostGrid.module.css';
+import PostCard from './postCard';
+import * as styles from './postgrid.module.css';
 
 const PostGrid = ({ posts }) => {
   return (

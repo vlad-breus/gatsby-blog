@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
-import * as styles from './PostCard.module.css'; // Assuming CSS Module
+import * as styles from './postcard.module.css';
 
 const PostCard = ({ post }) => {
   const image = getImage(post.frontmatter.hero_image);
