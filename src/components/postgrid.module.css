@@ -1,12 +1,13 @@
 .posts-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: minmax(300px, auto); /* sets a minimum and allows expansion */
     gap: 20px;
     margin: 20px 0;
-  }
+  }  
   
   @media (max-width: 800px) {
     .posts-grid {
       grid-template-columns: 1fr;
     }
-  }
+  }  

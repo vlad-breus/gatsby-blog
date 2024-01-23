@@ -4,15 +4,18 @@
   }
   
   .post-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Align content to top and bottom */
+    height: 100%; /* Stretch to fill the row height */
     border: 1px solid #ddd;
     border-radius: 12px;
     overflow: hidden;
     transition: box-shadow 0.3s;
-    display: block;
     max-width: 400px;
     margin-left: auto;
     margin-right: auto;
-  }
+  }  
   
   .post-card:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

@@ -7,13 +7,13 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.socialLinks}>
-        <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <a href="https://www.linkedin.com/in/vladislav-breus/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
           <FontAwesomeIcon icon={faLinkedin} className={styles.icon} />
         </a>
-        <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <a href="https://github.com/vlad-breus" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
           <FontAwesomeIcon icon={faGithub} className={styles.icon} />
         </a>
-        <a href="https://t.me/your-telegram" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+        <a href="https://t.me/vbreus" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
           <FontAwesomeIcon icon={faTelegram} className={styles.icon} />
         </a>
       </div>

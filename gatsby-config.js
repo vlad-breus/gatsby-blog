@@ -8,6 +8,18 @@ module.exports = {
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: 'Vlad Breus Blog',
+        short_name: 'VB Blog',
+        start_url: '/',
+        background_color: '#ffffff',
+        theme_color: '#663399',
+        display: 'minimal-ui',
+        icon: 'src/images/icon.png',
+      },
+    },
+    {
       resolve: "gatsby-source-filesystem",
       options: {
         name: `blog`,
