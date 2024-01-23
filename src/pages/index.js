@@ -2,31 +2,35 @@ import * as React from 'react';
 import { Link, useStaticQuery, graphql } from 'gatsby';
 import Layout from '../components/layout';
 import Seo from '../components/seo';
-import PostGrid from '../components/postgrid'; // Make sure to import PostGrid
+import PostGrid from '../components/postgrid';
 import Button from '../components/button';
 import { StaticImage } from 'gatsby-plugin-image';
 import * as styles from '../components/header.module.css';
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
-    query {
-      allMdx(sort: {frontmatter: { date: DESC }}, limit: 3) {
-        nodes {
-          id
-          excerpt
-          frontmatter {
-            title
-            date(formatString: "MMMM D, YYYY")
-            slug
-            hero_image {
-              childImageSharp {
-                gatsbyImageData
-              }
+  query {
+    allMdx(sort: {frontmatter: { date: DESC }}, limit: 3) {
+      nodes {
+        id
+        excerpt
+        frontmatter {
+          title
+          date(formatString: "MMMM D, YYYY")
+          slug
+          hero_image {
+            childImageSharp {
+              gatsbyImageData(
+                width: 300
+                placeholder: BLURRED
+                formats: [AUTO, WEBP, AVIF]
+              )
             }
           }
         }
       }
     }
+  }
   `);
 
   // Make sure the data is loaded before trying to access it

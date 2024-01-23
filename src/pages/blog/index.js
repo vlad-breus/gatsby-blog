@@ -29,6 +29,8 @@ export const query = graphql`
                 aspectRatio: 1.5,
                 layout: FIXED,
                 transformOptions: { cropFocus: CENTER }
+                placeholder: BLURRED
+                formats: [AUTO, WEBP, AVIF]
               )
             }
           }
