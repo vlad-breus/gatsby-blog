@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import * as styles from './header.module.css';
 import { StaticImage } from 'gatsby-plugin-image';
+import Button from '../components/button';
 
 const Header = ({ siteTitle }) => {
   return (
@@ -16,17 +17,9 @@ const Header = ({ siteTitle }) => {
         </Link>
       </div>
       <nav className={styles.nav}>
-        <ul className={styles.navLinks}>
-          <li className={styles.navLinkItem}>
-            <Link to="/" className={styles.navLinkText} activeClassName={styles.activeNavLink}>Home</Link>
-          </li>
-          <li className={styles.navLinkItem}>
-            <Link to="/about" className={styles.navLinkText} activeClassName={styles.activeNavLink}>About</Link>
-          </li>
-          <li className={styles.navLinkItem}>
-            <Link to="/blog" className={styles.navLinkText} activeClassName={styles.activeNavLink}>Blog</Link>
-          </li>
-        </ul>
+        <Button to="/">Home</Button>
+        <Button to="/about">About</Button>
+        <Button to="/blog">Blog</Button>
       </nav>
     </header>
   );

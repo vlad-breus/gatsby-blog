@@ -32,7 +32,12 @@
   .logo .gatsby-image-wrapper {
     margin-right: 10px; /* Add some space between the logo and the text */
   }  
-  
+
+  .nav {
+    display: flex; /* Arrange buttons in a row */
+    justify-content: space-between; /* Distribute buttons evenly */
+  }
+
   .nav-links {
     list-style: none;
     display: flex;
