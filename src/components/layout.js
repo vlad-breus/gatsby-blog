@@ -1,5 +1,6 @@
 import * as React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
+import Footer from './Footer';
 import { 
     container,
     heading,
@@ -45,6 +46,7 @@ const Layout = ({ pageTitle, children }) => {
             <h1 className={heading}>{pageTitle}</h1>
             {children}
         </main>
+        <Footer />
     </div>
   )
 }
