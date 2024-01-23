@@ -2,7 +2,7 @@ import React from "react";
 import Layout from '../../components/layout';
 import Seo from '../../components/seo';
 import { graphql } from 'gatsby';
-import PostGrid from '../../components/PostGrid';
+import PostGrid from '../../components/postGrid';
 
 const BlogPage = ({ data }) => {
   return (

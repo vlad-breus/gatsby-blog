@@ -1,0 +1,67 @@
+.header {
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem; /* Reduce padding */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }  
+  
+  .logo {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Align items vertically */
+    font-size: 1.2rem; /* Adjust the font size */
+    font-weight: bold;
+    color: #333; /* Change color */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .logo a {
+    display: flex;
+    align-items: center;
+    color: inherit; /* Inherit color from parent */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .logo a:hover {
+    text-decoration: underline; /* Underline on hover for link */
+  }
+  
+  .logo .gatsby-image-wrapper {
+    margin-right: 10px; /* Add some space between the logo and the text */
+  }  
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-link-item {
+    margin-right: 1rem;
+  }
+  
+  .nav-link-text {
+    text-decoration: none;
+    color: #333;
+    display: block; /* Make the link fill the li */
+    padding: 5px 10px; /* Add some padding */
+    border: 1px solid transparent; /* Add transparent border */
+    border-radius: 5px; /* Slightly round corners */
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .nav-link-text:hover, .nav-link-text:focus {
+    background-color: #e8e8e8; /* Change background on hover/focus */
+    border-color: #ddd; /* Change border color */
+  }
+  
+  .active-nav-link {
+    color: #007bff; /* Example active link color */
+    border-color: #007bff; /* Example active link border color */
+  }
+
+  .title {
+    margin-left: 15px; /* Margin to separate title from the icon */
+  }

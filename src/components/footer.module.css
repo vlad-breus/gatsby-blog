@@ -1,5 +1,9 @@
 .footer {
-    text-align: center;
+    display: flex; /* Use Flexbox */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally in the container */
+    justify-content: space-evenly; /* Center items vertically in the container */
+    text-align: center; /* Center the text */
     padding: 20px;
     margin-top: 40px;
     background-color: #f0f0f0;
@@ -8,17 +12,19 @@
   
   .socialLinks {
     margin-bottom: 10px;
+    display: flex; /* Use Flexbox for social links as well */
+    justify-content: center; /* Center social links */
   }
   
   .icon {
     margin: 0 10px;
-    color: #333;
-    font-size: 24px;
+    color: #333; /* Default icon color */
+    font-size: 24px; /* Adjust size as needed */
     transition: color 0.3s ease, transform 0.3s ease;
   }
   
   .icon:hover {
-    color: #007bff;
-    transform: scale(1.1);
+    color: #007bff; /* Hover color */
+    transform: scale(1.1); /* Slightly enlarge on hover */
   }
   
