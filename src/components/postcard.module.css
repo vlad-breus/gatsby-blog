@@ -29,5 +29,24 @@
     text-decoration: none;
   }
   
-  /* Add more styles as needed */
+  .postCardContent {
+    padding: 12px;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 10px;
+  }
   
+  .postCardContent h2 {
+    margin: 0.5em 0;
+    font-size: 1.2em; /* Adjust the font size as needed */
+  }
+  
+  .postCardContent .postDate {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 0.5em;
+  }
+  
+  .postCardContent .excerpt {
+    font-size: 1em;
+    color: #333;
+  }  
