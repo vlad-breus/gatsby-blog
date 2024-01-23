@@ -46,6 +46,7 @@ module.exports = {
           `Merriweather\:400,400i,700,700i`,
           `Roboto\:400,400i,700,700i`,
           `Lato\:400,400i,700,700i`,
+          `Playfair Display\:400,400i,700,700i`,
         ],
         display: 'swap',
       },
