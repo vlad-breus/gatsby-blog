@@ -16,7 +16,7 @@
   color: white
 }
 
-.button.active { /* Use the 'active' class for active state */
-  color: #003366; /* Example active button color */
-  border-color: #003366; /* Example active button border color */
-}
+.active {
+    color: #003366; /* Example active button color */
+    border-color: #003366; /* Example active button border color */
+  }

@@ -23,10 +23,11 @@
     align-items: center;
     color: inherit; /* Inherit color from parent */
     text-decoration: none; /* Remove underline */
+    color: #003366;
   }
   
   .logo a:hover {
-    text-decoration: underline; /* Underline on hover for link */
+    color: #FF6B6B;
   }
   
   .logo .gatsby-image-wrapper {
