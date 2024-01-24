@@ -6,12 +6,12 @@
 }
 
 .heading {
-  font-family: 'Montserrat', serif; /* Try a different font */
-  font-weight: 500; /* Bolder weight */
-  color: #003366; /* Darker color for better contrast */
-  line-height: 1.2; /* Slightly increased line height */
-  margin-bottom: 2rem; /* More space below */
-  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5); /* Subtle text shadow */
+  font-family: 'Montserrat', serif;
+  font-weight: 500;
+  color: #003366;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
 }
 
 .site-title {

@@ -1,0 +1,36 @@
+.post-carousel {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: flex-start; /* Start alignment */
+    scroll-snap-type: x mandatory;
+  }
+  
+  .post-carousel::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+  }
+  
+  .post-carousel {
+    -ms-overflow-style: none; /* for IE and Edge */
+    scrollbar-width: none; /* for Firefox */
+  }
+  
+  .post-carousel > * {
+    flex: 0 0 auto;
+    width: 300px; /* Adjust as needed */
+    margin-right: 10px;
+    scroll-snap-align: start;
+  }
+  
+  @media (max-width: 600px) {
+    .post-carousel > * {
+      width: 250px; 
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .post-carousel {
+      justify-content: center; 
+    }
+  }

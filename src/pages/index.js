@@ -2,14 +2,14 @@ import * as React from 'react';
 import { Link, useStaticQuery, graphql } from 'gatsby';
 import Layout from '../components/layout';
 import Seo from '../components/seo';
-import PostGrid from '../components/PostGrid';
 import Button from '../components/button';
+import PostCarousel from '../components/PostCarousel';
 import { StaticImage } from 'gatsby-plugin-image';
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
   query {
-    allMdx(sort: {frontmatter: { date: DESC }}, limit: 3) {
+    allMdx(sort: {frontmatter: { date: DESC }}, limit: 4) {
       nodes {
         id
         excerpt
@@ -50,7 +50,7 @@ const IndexPage = () => {
       </section>
       <section>
         <h2><u><Link to="/blog">Latest Posts</Link></u></h2>
-        <PostGrid posts={data.allMdx.nodes} />
+        <PostCarousel posts={data.allMdx.nodes} />
         <div style={{ textAlign: 'center', marginTop: '20px' }}>
           <Button to="/blog">View All Posts</Button>
         </div>
