@@ -49,7 +49,7 @@ const IndexPage = () => {
         <p>Welcome to my blog where I share my journey.</p>
       </section>
       <section>
-        <h2><u><Link to="/blog">Latest Posts</Link></u></h2>
+        <h2><u>Latest Posts</u></h2>
         <PostCarousel posts={data.allMdx.nodes} />
         <div style={{ textAlign: 'center', marginTop: '20px' }}>
           <Button to="/blog">View All Posts</Button>

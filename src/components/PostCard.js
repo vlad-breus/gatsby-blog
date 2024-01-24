@@ -12,8 +12,8 @@ const PostCard = ({ post }) => {
         {image && <GatsbyImage image={image} alt={post.frontmatter.title} />}
         <div className={styles.postCardContent}>
           <h2>{post.frontmatter.title}</h2>
-          <p className={styles.postDate}>Posted: {post.frontmatter.date}</p>
           <p className={styles.excerpt}>{post.excerpt}</p>
+          <p className={styles.postDate}>Posted: {post.frontmatter.date}</p>
         </div>
       </article>
     </Link>
