@@ -58,7 +58,7 @@ module.exports = {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
         host: 'https://www.vbr.eus',
-        sitemap: 'https://www.vbr.eus/sitemap.xml',
+        sitemap: 'https://vbr.eus/sitemap-index.xml',
         policy: [{userAgent: '*', allow: '/'}]
       }
     },
