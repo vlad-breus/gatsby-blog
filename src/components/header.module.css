@@ -71,3 +71,15 @@
   .title {
     margin-left: 15px; /* Margin to separate title from the icon */
   }
+
+  @media (max-width: 768px) {
+    .title {
+      display: none; /* Hide title text */
+    }
+  
+    .logo .gatsby-image-wrapper {
+      width: 60px; /* Adjust logo size */
+      height: 60px; /* Adjust logo size */
+    }
+  }
+  

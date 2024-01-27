@@ -27,7 +27,7 @@ export const query = graphql`
               gatsbyImageData(
                 width: 400,
                 aspectRatio: 1.5,
-                layout: FIXED,
+                layout: CONSTRAINED,
                 transformOptions: { cropFocus: CENTER }
                 placeholder: BLURRED
                 formats: [AUTO, WEBP, AVIF]

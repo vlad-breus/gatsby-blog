@@ -75,5 +75,13 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: 'gatsby-plugin-matomo',
+      options: {
+        siteId: '1',
+        matomoUrl: 'https://analytics.vbr.eus/',
+        siteUrl: 'https://www.vbr.eus/'
+      }
+    }
   ],
 };

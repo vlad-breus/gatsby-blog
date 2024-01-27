@@ -64,3 +64,11 @@
     color: #333;
   }
   
+@media (max-width: 768px) {
+    .post-card {
+      max-width: calc(100% - 20px);
+      margin: 10px auto;
+      padding: 5px;
+    }
+  }
+  
