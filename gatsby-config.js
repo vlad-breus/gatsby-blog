@@ -68,7 +68,7 @@ module.exports = {
         mergeScriptHashes: false,
         mergeStyleHashes: false,
         directives: {
-          'script-src': `'self' 'unsafe-inline' data: www.google-analytics.com`,
+          'script-src': `'self' 'unsafe-inline' data: www.google-analytics.com analytics.vbr.eus`,
           'style-src': `'self' 'unsafe-inline' fonts.googleapis.com fonts.gstatic.com`,
           'img-src': `'self' data: www.google-analytics.com`,
           'font-src': `'self' data: fonts.gstatic.com`,
@@ -78,9 +78,9 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-matomo',
       options: {
-        siteId: '1',
-        matomoUrl: 'https://analytics.vbr.eus/',
-        siteUrl: 'https://www.vbr.eus/'
+        siteId: 1,
+        matomoUrl: 'https://analytics.vbr.eus',
+        siteUrl: 'https://www.vbr.eus'
       }
     }
   ],
