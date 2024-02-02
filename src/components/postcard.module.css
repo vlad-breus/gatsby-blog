@@ -73,6 +73,9 @@
     color: #333;
     flex-grow: 0;
     margin-bottom: 0.5em;
+    height: calc(4 * 1.4rem); /* Adjust line-height as needed */
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .post-card-image-title {
