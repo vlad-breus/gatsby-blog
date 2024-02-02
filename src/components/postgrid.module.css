@@ -6,13 +6,15 @@
 .posts-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-auto-rows: minmax(300px, auto);
+    grid-auto-rows: minmax(300px, 1fr); /* Will stretch to the height of the tallest card */
     gap: 20px;
     margin: 20px;
+    align-items: stretch; /* New line to add */
 }
 
 @media (max-width: 768px) {
     .posts-grid {
-        grid-auto-rows: minmax(min-content, max-content);
+        grid-template-columns: 1fr; /* Stack the cards on smaller screens */
+        grid-auto-rows: minmax(100px, auto); /* Adjust the minimum height as needed */
     }
 }
