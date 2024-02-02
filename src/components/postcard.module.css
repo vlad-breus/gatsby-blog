@@ -14,11 +14,8 @@
     overflow: hidden;
     transition: box-shadow 0.3s;
     max-width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-    min-height: 450px;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    min-height: 440px;
+    margin: 10px auto;
     transition: box-shadow 0.3s, transform 0.3s;
   }
   
@@ -28,20 +25,14 @@
   }
   
   .gatsby-image-wrapper {
-    border-radius: 12px 12px 0 0; 
-    margin: 0; 
-    display: block;
-    max-width: 100%;
-    width: 100%;
-    height: auto;
-    flex-shrink: 0;
-    height: 200px;
-    overflow: hidden;
-    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+    height: 200px; /* Fixed height for image consistency */
+    object-fit: cover; /* Ensures images cover the area */
+    margin-bottom: 0;
   }
-  
+
   .post-card-content {
-    padding: 12px;
+    padding: 0 12px;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -78,7 +69,7 @@
     text-overflow: ellipsis;
   }
 
-  .post-card-image-title {
+  .post-card-image {
     overflow: hidden;
     margin-bottom: 0.5em;
   }
@@ -89,20 +80,30 @@
     padding: 12px; /* Adjust as needed */
   }
   
-  /* Adjust h2 margin to control space between the image and the title */
-  .post-card-image-title h2 {
-    padding: 0 12px;
-    margin-top: 1em;
-    margin-bottom: 0.5rem; /* Space between title and excerpt */
-    line-height: 1.2; /* Consistent line spacing */
-  }
-  
 @media (max-width: 768px) {
     .post-card {
+      min-height: 200px;
       max-width: calc(100% - 20px);
-      margin: 10px auto;
-      padding: 5px;
-      height: 95%;
+      margin: 5px auto;
     }
+  }
+
+  .post-card-content h2 a {
+    text-decoration: none;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    height: calc(2 * 1.4rem);
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .excerpt {
+    font-size: 1em;
+    color: #333;
+    flex-grow: 0;
+    margin-bottom: 0.5em;
+    height: calc(3 * 1.4rem); /* Adjust line-height as needed */
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   
