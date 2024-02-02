@@ -29,10 +29,14 @@
   .logo a:hover {
     color: #FF6B6B;
   }
-  
-  .logo .gatsby-image-wrapper {
-    margin-right: 10px; /* Add some space between the logo and the text */
-  }  
+
+  .logoImage {
+    max-height: 100%;
+    margin-right: 10px;
+    max-width: 40%;
+    height: auto;
+    display: flex;
+  }
 
   .nav {
     display: flex; /* Arrange buttons in a row */
@@ -77,9 +81,8 @@
       display: none; /* Hide title text */
     }
   
-    .logo .gatsby-image-wrapper {
-      width: 60px; /* Adjust logo size */
-      height: 60px; /* Adjust logo size */
+    .logoImage {
+      max-width: 150px; /* Smaller logo on mobile devices */
     }
   }
   

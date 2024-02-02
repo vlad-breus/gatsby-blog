@@ -1,11 +1,21 @@
 .post-carousel {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    justify-content: flex-start; /* Start alignment */
-    scroll-snap-type: x mandatory;
-  }
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  justify-content: flex-start;
+  scroll-snap-type: x mandatory;
+  overflow-y: hidden; /* Add this to prevent vertical overflow */
+  margin: 0 auto; /* Center carousel if needed */
+  scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+.post-carousel > * {
+  flex: 0 0 auto;
+  width: 300px;
+  margin-right: 10px;
+  scroll-snap-align: start;
+  min-height: 300px; /* Set a min-height for consistency */
+}
   
   .post-carousel::-webkit-scrollbar {
     display: none; /* for Chrome, Safari, and Opera */
@@ -14,13 +24,6 @@
   .post-carousel {
     -ms-overflow-style: none; /* for IE and Edge */
     scrollbar-width: none; /* for Firefox */
-  }
-  
-  .post-carousel > * {
-    flex: 0 0 auto;
-    width: 300px; /* Adjust as needed */
-    margin-right: 10px;
-    scroll-snap-align: start;
   }
   
   @media (max-width: 600px) {

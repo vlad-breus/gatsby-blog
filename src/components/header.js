@@ -8,13 +8,15 @@ const Header = ({ siteTitle }) => {
   return (
     <header className={styles.header}>
       <div className={styles.logo}>
+        <div className={styles.logoImage}>
         <Link to="/">
-          <StaticImage
-            alt="Logo"
-            src="../images/icon.png"
-          />
+        <StaticImage
+          src="../images/logo-big.png"
+          alt="Logo"
+        />
           <span className={styles.title}>{siteTitle}</span>
         </Link>
+        </div>
       </div>
       <nav className={styles.nav}>
         <Button to="/">Home</Button>

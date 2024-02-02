@@ -9,9 +9,11 @@ const PostCard = ({ post }) => {
   return (
     <Link to={`/blog/${post.frontmatter.slug}`} className={styles.postCardLink}>
       <article className={styles.postCard}>
-        {image && <GatsbyImage image={image} alt={post.frontmatter.title} />}
-        <div className={styles.postCardContent}>
+        <div className={styles.postCardImageTitle}>
+          {image && <GatsbyImage image={image} alt={post.frontmatter.title} />}
           <h2>{post.frontmatter.title}</h2>
+        </div>
+        <div className={styles.postCardDetails}>
           <p className={styles.excerpt}>{post.excerpt}</p>
           <p className={styles.postDate}>Posted: {post.frontmatter.date}</p>
         </div>
