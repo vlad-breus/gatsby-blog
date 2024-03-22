@@ -23,10 +23,10 @@ module.exports = {
     },
     {
       resolve: "gatsby-source-filesystem",
-      options: {
-        name: `blog`,
-        path: `${__dirname}/blog`,
-      }
+      options:  {
+          name: `blog`,
+          path: `${__dirname}/blog`,
+        }
     },
     {
       resolve: `gatsby-plugin-mdx`,
@@ -36,6 +36,14 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 1200,
+            },
+          },
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              classPrefix: "language-",
+              inlineCodeMarker: null,
+              aliases: {},
             },
           },
         ],
@@ -82,6 +90,6 @@ module.exports = {
         matomoUrl: 'https://analytics.vbr.eus/',
         siteUrl: 'https://www.vbr.eus/'
       }
-    }
+    },
   ],
 };
