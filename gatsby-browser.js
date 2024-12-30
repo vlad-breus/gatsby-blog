@@ -1,4 +1,5 @@
 import './src/styles/global.css';
+require("prismjs/themes/prism-coy.css");
 
 export const onRouteUpdate = ({ location }) => {
     if (typeof window !== 'undefined' && window._paq) {

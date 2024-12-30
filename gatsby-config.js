@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: "Vlad Breus Blog",
@@ -23,10 +27,10 @@ module.exports = {
     },
     {
       resolve: "gatsby-source-filesystem",
-      options: {
-        name: `blog`,
-        path: `${__dirname}/blog`,
-      }
+      options:  {
+          name: `blog`,
+          path: `${__dirname}/blog`,
+        }
     },
     {
       resolve: `gatsby-plugin-mdx`,
@@ -36,6 +40,14 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 1200,
+            },
+          },
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              classPrefix: "language-",
+              inlineCodeMarker: null,
+              aliases: {},
             },
           },
         ],
@@ -74,6 +86,21 @@ module.exports = {
           'font-src': `'self' data: fonts.gstatic.com`,
           'connect-src': `'self' https://analytics.vbr.eus`,
         },
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-matomo',
+      options: {
+        siteId: '1',
+        matomoUrl: 'https://analytics.vbr.eus/',
+        siteUrl: 'https://www.vbr.eus/'
+      }
+    },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `wvnglkagip6t`,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
   ],
