@@ -14,7 +14,6 @@
     overflow: hidden;
     transition: box-shadow 0.3s;
     max-width: 400px;
-    height: 100%;
     min-height: 440px;
     margin: 10px auto;
     transition: box-shadow 0.3s, transform 0.3s;
