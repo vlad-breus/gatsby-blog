@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: "Vlad Breus Blog",
@@ -90,6 +94,13 @@ module.exports = {
         matomoUrl: 'https://analytics.vbr.eus/',
         siteUrl: 'https://www.vbr.eus/'
       }
+    },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `wvnglkagip6t`,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+      },
     },
   ],
 };
