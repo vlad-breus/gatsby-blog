@@ -6,7 +6,6 @@ import Seo from '../components/seo';
 import Button from '../components/button';
 import PostCarousel from '../components/PostCarousel';
 import { StaticImage } from 'gatsby-plugin-image';
-import './index.css';
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -42,6 +41,7 @@ const IndexPage = () => {
               width: 300
               placeholder: BLURRED
               formats: [AUTO, WEBP, AVIF]
+              layout: CONSTRAINED
             )
           }
           post_text {

@@ -82,7 +82,7 @@ module.exports = {
         directives: {
           'script-src': `'self' 'unsafe-inline' data: www.google-analytics.com https://analytics.vbr.eus`,
           'style-src': `'self' 'unsafe-inline' fonts.googleapis.com fonts.gstatic.com`,
-          'img-src': `'self' data: www.google-analytics.com https://analytics.vbr.eus`,
+          'img-src': `'self' data: www.google-analytics.com https://analytics.vbr.eus images.ctfassets.net`,
           'font-src': `'self' data: fonts.gstatic.com`,
           'connect-src': `'self' https://analytics.vbr.eus`,
         },
@@ -101,6 +101,7 @@ module.exports = {
       options: {
         spaceId: `wvnglkagip6t`,
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+        downloadLocal: true,
       },
     },
   ],
